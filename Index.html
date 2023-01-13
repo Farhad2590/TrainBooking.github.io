@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--font integration-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<title>minimo</title>
+	<link rel="stylesheet" href="css/style1.css">
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+
+<body>
+	<!--header start-->
+	<header>
+		<div class="wrapper">
+			<div class="logo">
+				<img src="image/minimo_logo1.png" alt="minimo">
+			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Login.html">Signup</a></li>
+					<li><a href="Train_Information.html">Train Infromation</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+    <div class="slider">
+		<!-- Slider main container -->
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide"><img src="image/Train1.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="image/Train2.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="image/Train3.jpg" alt=""></div>
+				<div class="swiper-slide"><img src="image/Train4.jpg" alt=""></div>
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+			// Optional parameters
+		
+			loop: true,
+			
+			// If we need pagination
+			
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			
+		});
+	</script>
+	<!--banner end-->
+    <div class="from-to-container" >
+        <div  class = "wreappe1">
+            <div class="from-box">
+                <label for="from">From:</label>
+                <input type="text" id="from" placeholder="Enter starting location">
+            </div>
+            <div class="date_box">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+        </div>
+
+        <div class = "wreappe2">
+            <div class="to-box">
+                <label color = "color: white;" for="to">To:</label>
+                <input type="text" id="to" placeholder="Enter destination">
+            </div>
+            <div class="classbox">
+                <label for="class">Train Class:</label>
+                <select id="class" name="class">
+                    <option value="">Choose a Class</option>
+                    <option value="AC_B">AC_B</option>
+                    <option value="AC_S">AC_S</option>
+                    <option value="SNIGDHA">SNIGDHA</option>
+                    <option value="F_BERTH">F_BERTH</option>
+                    <option value="F_SEAT">F_SEAT</option>
+                    <option value="F_CHAIR">F_CHAIR</option>
+                    <option value="S_CHAIR">S_CHAIR</option>
+                    <option value="SHOVAN">SHOVAN</option>
+                    <option value="SHULOV">SHULOV</option>
+                    <option value="AC_CHAIR">AC_CHAIR</option>
+                </select>
+            </div>
+        </div>
+   
+    
+    </div>
+	<div class="Trainimage">
+		<img src="image/TrainVedio.gif" alt="Forest" style="width:60%">
+	</div>
+	<div>
+		<div class="row">
+			<div class="column">
+			  <img src="image/search.png" alt="Snow" style="width:80%">
+			  <label for="img">search</label>
+			</div>
+			<div class="column">
+			  <img src="image/select.png" alt="Forest" style="width:80%">
+			  <label for="img">select</label>
+			</div>
+			<div class="column">
+			  <img src="image/pay.png" alt="Mountains" style="width:80%">
+			  <label for="img">pay</label>
+			</div>
+		  </div>
+	</div>
+
+    <!--footer start-->
+	<footer>
+		<div class="container">
+		  <div class="row">
+			<div class="col-sm-1">
+			  <img src="Image/minimo_logo1.png" alt="minimo">
+			</div>
+			<div class="col-sm-2">
+			  <h6>Terms and Conditions | Privacy Policy</h6>
+			</div>
+			<div class="col-sm-3">
+			  <h3>Powerdby <br> Farhad||Moumita||Aziz</h3>
+			</div>
+		  </div>
+		  <div class="row">
+			<div class="col-sm-12">
+			  <p>Copyright © 2022 Software Sessional</p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+	<!--footer end-->
+	
+	
+</body>
+
+</html>
